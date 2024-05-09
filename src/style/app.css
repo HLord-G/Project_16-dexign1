@@ -113,7 +113,7 @@ body .content {
   flex: 0.4;
   height: 100%;
   width: 100%;
-  padding-left: 10px;
+  padding: 0px 10px 0px 10px;
 }
 body .content .box_a {
   height: 100%;
