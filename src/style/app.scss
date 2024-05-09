@@ -63,6 +63,7 @@ body{
                 position: relative;
 
                 .content_inside{
+                    overflow: hidden;
                     height:100%;
                     width:100%;
                     // border: 1px solid ghostwhite;
@@ -87,7 +88,7 @@ body{
                     padding:20px;
                     border-radius:20px;
                     img{
-                        width:80%;
+                        width:220px;
                     }
 
                     h1{
@@ -99,6 +100,7 @@ body{
                     }
                 }
             }
+
             .box_c:nth-child(2){
                 flex:75%;
                 height:$top_height;
@@ -202,6 +204,28 @@ body{
     }
 
 
+
+
+
+
+
+    // @media(max-width:1606px) {
+    //     flex-flow: column;
+    //     height:100%;
+    
+    //     .maincontent{
+    //         position: relative;
+    //         height:100vh;
+    //         width:100%;
+    //     }
+
+    //     .content{
+    //         position: relative;
+    //         height:100vh;
+    //         width:100%;
+    //     }
+ 
+    // }
 
 
 

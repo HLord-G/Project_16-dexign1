@@ -49,6 +49,7 @@ body .maincontent .box_x:nth-child(2) .box_c {
   position: relative;
 }
 body .maincontent .box_x:nth-child(2) .box_c .content_inside {
+  overflow: hidden;
   height: 100%;
   width: 100%;
 }
@@ -66,7 +67,7 @@ body .maincontent .box_x:nth-child(2) .box_c:nth-child(1) .content_inside {
   border-radius: 20px;
 }
 body .maincontent .box_x:nth-child(2) .box_c:nth-child(1) .content_inside img {
-  width: 80%;
+  width: 220px;
 }
 body .maincontent .box_x:nth-child(2) .box_c:nth-child(1) .content_inside h1 {
   text-align: center;
