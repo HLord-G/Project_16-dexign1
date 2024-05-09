@@ -6,7 +6,7 @@
 }
 
 body {
-  height: 100vh;
+  height: 115vh;
   width: 100%;
   padding: 20px;
   display: flex;
@@ -35,7 +35,7 @@ body .maincontent .box_xa {
   flex: 10%;
 }
 body .maincontent .box_xb {
-  flex: 60%;
+  flex: 65%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,22 +52,99 @@ body .maincontent .box_xb .boxs_a {
   background-color: #c4294a;
   padding: 20px;
 }
+body .maincontent .box_xb .boxs_a img {
+  width: 80%;
+  position: absolute;
+  top: 0;
+  left: 10%;
+}
+body .maincontent .box_xb .boxs_a h2 {
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  width: 100%;
+  line-height: 30px;
+  text-align: center;
+  font-size: xx-large;
+  color: ghostwhite;
+}
 body .maincontent .box_xb .boxs_b {
   position: relative;
-  flex: 75%;
+  flex: 70%;
   background-color: #91eea8;
   padding: 20px;
+  border-radius: 20px 20px 0px 20px;
+  z-index: 99;
+}
+body .maincontent .box_xb .boxs_b .overlap {
+  position: absolute;
+  bottom: -100px;
+  border-left: 10px solid black;
+  border-right: 10px solid black;
+  border-bottom: 10px solid black;
+  border-radius: 0px 0px 20px 20px;
+  right: -10px;
+  background-color: #91eea8;
+  width: 140px;
+  height: 100px;
+  z-index: 99;
+}
+body .maincontent .box_xb .boxs_b .overlap .cuver-a {
+  color: #91eea8;
+  position: absolute;
+  top: -2px;
+  left: -22px;
+  transform: rotate(90deg);
+}
+body .maincontent .box_xb .boxs_b .overlap .cuver-b {
+  color: black;
+  position: absolute;
+  top: 8px;
+  left: -32px;
+  transform: rotate(90deg);
+}
+body .maincontent .box_xb .boxs_b .overlap .cuver-c {
+  color: black;
+  position: absolute;
+  bottom: -32px;
+  right: 2px;
+  transform: rotate(90deg);
+}
+body .maincontent .box_xb .boxs_b .overlap .cuver-c::before {
+  position: absolute;
+  top: -10px;
+  left: -9px;
+  width: 17px;
+  height: 17px;
+  background-color: black;
+  z-index: 999;
+  border-radius: 50%;
+  content: "";
+  clear: both;
 }
 @media (max-width: 768px) {
   body .maincontent .box_xb {
     flex-flow: column;
     width: 100%;
+    height: 100%;
   }
   body .maincontent .box_xb .boxs_a {
     width: 100%;
+    height: 100%;
   }
   body .maincontent .box_xb .boxs_b {
     width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  body .maincontent .box_xb .boxs_b .hr {
+    position: relative;
+    background-color: black;
+    top: 0;
+    left: -200px;
+    width: 1px;
+    height: 100vh;
+    display: none;
   }
 }
 body .maincontent .box_xc {
@@ -99,6 +176,7 @@ body .maincontent .box_xc .boxs_d {
   body .maincontent .box_xc {
     flex-flow: column;
     width: 100%;
+    height: 100%;
   }
   body .maincontent .box_xc .boxs_c {
     width: 100%;
@@ -124,18 +202,24 @@ body .content .box_a {
 @media (max-width: 1224px) {
   body {
     flex-flow: column;
-    height: 200vh;
+    height: 100%;
     width: 100%;
+    display: none;
   }
   body .maincontent {
     width: 100%;
     height: 100%;
   }
   body .maincontent .box_x {
-    height: 200px !important;
+    width: 100%;
+    height: 100%;
   }
-  body .maincontent .box_xa {
-    height: 200vh;
+  body .maincontent .box_xb {
+    width: 100%;
+    height: 100%;
+  }
+  body .maincontent .box_xb .boxs_b .hr {
+    display: block;
   }
   body .content {
     width: 100%;
@@ -143,9 +227,29 @@ body .content .box_a {
   }
   body .content .box_a {
     padding: 0;
-    height: 70vh;
+    height: 100vh;
     width: 100%;
     border-radius: 20px;
     background-color: #c26592;
+  }
+}
+
+.text-focus-in {
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+/**
+ * ----------------------------------------
+ * animation text-focus-in
+ * ----------------------------------------
+ */
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
   }
 }/*# sourceMappingURL=app.css.map */
