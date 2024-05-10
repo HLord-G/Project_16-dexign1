@@ -11,7 +11,9 @@
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 </head>
 <body>
@@ -32,7 +34,6 @@
 
                     <img src="src/img/nike_icon.png" class="icon_desing animate__animated  animate__fadeInLeftBig animate__delay-1s" alt="">
 
-
                     <div class="center_text animate__animated animate__flipInX">NI<br>KE</div>
 
                     <h2 class="text-focus-in saira-stencil-one-regular ">Air Jordan Version</h2>
@@ -40,6 +41,17 @@
 
 
             <div class="boxs boxs_b animate__animated animate__fadeIn animate__delay-1s">
+
+
+                <div class="layer_0">
+                    <img src="src/img/dx_2.png" class="spatos_na_green animate__animated animate__delay-1s animate__bounceIn" alt="">
+                </div>
+                <div class="layer_1">
+                    <img src="src/img/spash.png" class="splash animate__animated animate__delay-1s animate__bounceIn" alt="">
+                </div>
+
+
+
                 <div class="overlap">
                     <div class="cuver-a">
                         <svg cache-id="9540c670fbf244a48ce7c6f4fff20aa6" width="20px" height="20px" fill="#91eea8" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"><path d="M0,0h207.31657C108.70097,24.48793,30.35712,93.03512,0,180.66844L0,0Z"  stroke-width="0"/></svg>
@@ -65,5 +77,20 @@
     </div>
 
 
+
+
+
+    <script>
+        $(document).ready(function(){
+            setTimeout(() => {
+
+                $(".spatos_na_green").attr("class", "spatos_na_green")
+                setTimeout(() => {
+                    $(".spatos_na_green").css("transform", "rotate(-30deg)");
+                }, 450);
+            }, 3000);
+        });
+
+    </script>
 </body>
 </html>

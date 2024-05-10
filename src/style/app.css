@@ -131,6 +131,39 @@ body .maincontent .box_xb .boxs_b {
   border-radius: 20px 20px 0px 20px;
   z-index: 99;
 }
+body .maincontent .box_xb .boxs_b .layer_0 {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 9;
+}
+body .maincontent .box_xb .boxs_b .layer_0 .spatos_na_green {
+  width: 60%;
+  position: absolute;
+  bottom: 20%;
+  right: 5%;
+  z-index: 9;
+  transition: 0.3s;
+}
+body .maincontent .box_xb .boxs_b .layer_1 {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 8;
+}
+body .maincontent .box_xb .boxs_b .layer_1 .splash {
+  width: 60%;
+  position: absolute;
+  bottom: 10%;
+  right: -70px;
+  transform: rotate(-30deg);
+}
 body .maincontent .box_xb .boxs_b .overlap {
   position: absolute;
   bottom: -100px;
