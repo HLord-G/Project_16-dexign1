@@ -1,5 +1,11 @@
 $background:black;
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap');
 
+.saira-stencil-one-regular {
+    font-family: "Saira Stencil One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 
 *{
     margin:0;
@@ -72,23 +78,74 @@ body{
                 background-color: #c4294a;
                 padding:20px;
 
+                .icon_desing{
+                    position: absolute;
+                    top:3%;
+                    left:5%;
+                    width:30%;
+                }
+
+                .xdot{
+                    position: absolute;
+                    top:25%;
+                    left:0%;
+                    opacity:.5;
+                    width:100%;
+                }
  
 
-                    img{
-                        width:80%;
+                    .sapatos{
+                        width:85%;
                         position: absolute;
-                        top:0;
+                        top:20%;
                         left:10%;
+                        z-index:99;
+
+                        
+
+                        @media (max-width:1476px) {
+                            width:95%;
+                            left:5%;
+                        }
                     }
+
+                    .center_text{
+                        color: black;
+                        font-weight: bolder;
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        line-height:165px;
+                        letter-spacing:20px;
+                        font-size: 220px;
+                        position: absolute;
+                        top:15%;
+                        left:10%;
+                        opacity:.5;
+
+                        @media (max-width:1706px) {
+                            left:6%;
+                        }
+
+                        @media (max-width:1618px) {
+                            left:3%;
+                        }
+
+                        @media (max-width:1562px) {
+                            left:0%;
+                        }
+                        
+                    }
+
+                    
     
                     h2{
                         position: absolute;
                         bottom:5%;
                         left:0;
                         width:100%;
-                        line-height: 30px;
+                        line-height: 40px;
                         text-align: center;
-                        font-size: xx-large;
+                        font-size: 50px;
+                        text-transform: uppercase;
                         color: ghostwhite;
                 }
 
